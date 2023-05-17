@@ -1,0 +1,138 @@
+.contact-from-2 .btn {
+    background: #b3c211;
+}
+
+.contact-from-2 .btn:hover{
+    background: #9fad0d;
+}
+
+.main-header .dropdown-menu a:hover {
+    background: transparent;
+    color: #b3c211;
+}
+
+.setting-button {
+    background: #b3c211;
+}
+
+.close-offcanvas{
+    color: #b3c211;
+}
+
+.service-info .icon i{
+    color: #b3c211;
+}
+
+#page_scroller {
+    background:  #b3c211;
+}
+
+.pricing-1 .plan-header .plan-price{
+    color: #b3c211;
+}
+
+.btn-outline {
+    border: solid 1px #b3c211;
+    color: #b3c211;
+}
+
+.btn-outline:hover {
+    border: solid 1px #b3c211;
+    background: #b3c211;
+    color: #fff;
+}
+
+.button-theme {
+    background: #b3c211;
+    color: #fff;
+}
+
+.reviews .carousel-indicators li.active {
+    background: #b3c211;
+}
+
+.contact-info .media i {
+    color: #b3c211;
+    border: dashed 1px #b3c211;
+}
+
+.property-box .plan-price{
+    color: #b3c211;
+}
+
+.service-info-2 .media-left {
+    border: solid 1px #b3c211;
+    color: #b3c211;
+}
+
+.pricing-1 .plan-list ul li i{
+    color: #b3c211;
+}
+
+.read-more {
+    color: #b3c211;
+}
+
+li.active.btn.filtr-button.filtr {
+    color: #b3c211;
+}
+
+.filteriz-navigation li:hover {
+    color: #b3c211;
+}
+
+.btn-color {
+    background: #b3c211;
+    border-color: #b3c211;
+}
+
+.btn-color:hover {
+    background: #9fad0d;
+    border-color: #9fad0d;
+}
+
+.service-info-2 .media-left {
+    border: solid 1px #b3c211;
+    color: #b3c211;
+}
+
+.popular-tags ul li a:hover {
+    border: solid 1px #b3c211;
+    background: #b3c211;
+    color: #fff;
+}
+
+/** MEDIA **/
+@media (max-width: 992px) {
+    .main-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #b3c211 !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #b3c211;
+    }
+}
+
+@media (min-width: 991px) {
+    .sticky-header .navbar-expand-lg .navbar-nav .active .nav-link {
+        color: #fff !important;
+    }
+
+    .sticky-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #fff !important;
+        opacity: .8;
+    }
+
+    .header-shrink .navbar-expand-lg .navbar-nav .active .nav-link {
+        color: #515151 !important;
+    }
+
+    .header-shrink .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #515151 !important;
+    }
+}
+
+
+
+
+

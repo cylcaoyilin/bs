@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>登录页面</title>
+<link href="/static/account/css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+</head>
+<body>
+	<h1>登录</h1>
+		<div class="app-nature">
+			<form method="post" action="{% url 'account_login' %}">
+				{%  csrf_token  %}
+				<input type="text" class="text" name="login" value="user" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'user address';}" >
+				<input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				<div class="submit"><input type="submit" value="登录" ></div>
+				<div class="clear"></div>
+
+				<div class="links">
+					<p class="sign">没有账号 ?<a href="{% url 'account_signup' %}"> 去注册</a></p>
+					<p class="sign1"><a href="{% url 'account_reset_password' %}"> 忘记密码</a></p>
+					<div class="clear"></div>
+				</div>
+				{% if form.errors %}
+					<div class="text-center">
+						{% for _, error in form.errors.items %}
+						<strong style="color: red">{{ error }}</strong>
+						{% endfor %}
+					</div>
+				{% endif %}
+			</form>
+		</div>
+</body>
+</html>

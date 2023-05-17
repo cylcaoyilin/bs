@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>注册页面</title>
+<link href="/static/account/css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+</head>
+<body>
+	<h1>注册</h1>
+		<div class="app-nature">
+			<form action="{% url 'account_signup' %}"  method="post">
+				{% csrf_token %}
+			    <input type="text" name="username" class="text" value="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'user address';}" >
+				{{ form.username.errors }}
+				<input type="text" class="text" name="email" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
+				{{ form.email.errors }}
+				<input type="password" value="Password" name="password1" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				{{ form.password1.errors }}
+				<input type="password" value="Password" name="password2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Repeat Password';}">
+				{{ form.password2.errors }}
+				<div class="submit"><input type="submit"  value="注册" ></div>
+				<div class="clear"></div>
+				<div class="links">
+					<p class="sign"><a href="{% url 'account_login' %}">返回登录</a></p>
+					<div class="clear"></div>
+				</div>
+			
+			</form>
+		</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+
+{% block head %}
+    {{ block.super }}
+{% endblock %}
+
+{% block script %}
+    {{ block.super }}
+    <script>
+        var right = document.getElementsByClassName("el-button el-button--default waves-effect")[3]
+        console.log(right);
+        right.style.display="none";
+        var right = document.querySelectorAll('.el-aside.menu li.el-submenu')[0]
+        console.log(right);
+        right.style.display="none";
+        var right = document.querySelectorAll('.el-aside.menu li.el-submenu')[1]
+        console.log(right);
+        right.style.display="none";
+    </script>
+{% endblock %}
